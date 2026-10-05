@@ -4,17 +4,42 @@ A starter repository for the CSC10014 Smart Virtual Assistant project.
 
 ## Setup
 
-TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine to
-running the app and the tests. Your partner will follow them without your help.
+Follow these steps on a fresh Windows machine.
 
-## Run
+### 1. Clone the repository
 
-TODO
+Clone the repository from GitHub:
 
-## Test
+```bash
+git clone https://github.com/vthung2536/lab01-vthung2536.git
+cd lab01-vthung2536
 
-TODO
+### 2. Create a Python virtual environment then run 
+python -m venv .venv
 
-## Project structure
+###3. Activate the virtual environment 
+.venv\Scripts\activate
 
-TODO
+### 4. Install dependencies
+pip install -r requirements.txt
+pip install -e .
+
+##Run
+Run the Study Assistant with:
+python -m assistant "where is the IT helpdesk?"
+
+##Test
+Run the test suite with:
+pytest -q
+
+##Progress structure
+lab01-vthung2536/
+├── src/
+│   └── assistant/
+├── tests/
+├── scripts/
+├── data/
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+└── .gitignore
